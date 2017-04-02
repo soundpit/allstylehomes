@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page | AllStyle Homes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- font awesome!! -->
+    <link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style_main.css" />
+	
+	<!-- shim for compatibility -->
+	<!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+     <!-- load the javascript -->
+    <script src="script/main.js"  ></script>
+
+</head>
+<body>
+    
+<div id="container">
+    <header class="clear">
+        <!-- logo here -->
+        <div id="left_header" class="shadow">
+            <img id="logo" src="images/logo_crop.jpg" alt="AllStyle Homes. Your tick of approval is our guarantee" />
+        </div>
+        <!-- contact information here -->
+        <div id="right_header" class="shadow">
+
+        <!-- the contact details are here -->
+            <i class="fa fa-phone"></i>
+            <p> (07) 4153 9876</p> 
+            <i class="fa fa-home"></i>
+            <p>255 Serenity Drive</p>
+            <p>Bundaberg QLD 4670</p>
+
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav>
+        <ul id="main_nav" class="shadow">
+            <li><a href="index.htm">Home</a></li>
+             <li><a href="about.htm">About</a></li>
+             <li><a href="designs.htm">Designs</a></li>
+            <li><a href="process.htm">Our Process</a></li>
+            <li><a href="faqs.htm">FAQ's</a></li>
+            <li><a href="testimonials.htm">Testimonials</a></li>
+            <li><a href="contact.htm">Contact</a></li>  
+        </ul>   
+    </nav>
+    
+<!-- MAIN CONTENT -->
+<div class="clear">
+    <section id="main" class="shadow">
+
+        <h1>Privacy Policy</h1>
+
+        <div id="privacy_wrapper">
+            <p> Aenean vitae turpis blandit, eleifend orci imperdiet, porta erat. Fusce ornare eros a sapien efficitur suscipit. Morbi consectetur consectetur est, vel porttitor mauris efficitur vel. Donec pulvinar, massa sed finibus posuere, orci justo mattis est, bibendum cursus turpis eros quis nisi. Curabitur rhoncus purus vitae massa pulvinar accumsan. Sed lacinia condimentum rutrum. Pellentesque sit amet augue ac massa feugiat volutpat. Integer vel auctor erat. Mauris tincidunt turpis metus, sit amet lobortis elit finibus id.</p>
+            <br/>
+            <p>  Aliquam volutpat metus vulputate metus tempus, non blandit massa fermentum.
+            Maecenas dui lectus, scelerisque id libero id, vestibulum ultricies mauris. Ut vel sollicitudin nibh, a vestibulum lectus. Suspendisse pretium mollis mi vitae blandit. Maecenas quis rutrum purus, eget vestibulum lorem. Vestibulum dignissim laoreet ante non luctus. Proin vel metus iaculis, efficitur erat vel, pharetra nulla. Vivamus commodo risus et nisi dignissim, a ullamcorper risus congue.</p>
+            <br />
+            <p>  Vestibulum tellus urna, ornare quis massa sed, ultricies tempor nisl. Nulla facilisi. Pellentesque pretium elit nunc. Integer vehicula ex justo. Sed non libero orci. Sed at pharetra arcu, vitae bibendum justo. In at arcu a massa rhoncus dignissim ut non quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce mollis felis at lorem dictum, porttitor vulputate lorem mollis. In et urna et velit ornare egestas ac sit amet turpis. Cras bibendum, eros sed maximus viverra, massa tortor tincidunt massa, dignissim semper sem sem quis tortor. Morbi pulvinar dui vitae dui sollicitudin mattis. Vestibulum pharetra velit id tortor porttitor rhoncus. Fusce vitae faucibus elit. Vivamus sed cursus ex, in tincidunt nunc.</p>
+            <br/>
+            <p>Aliquam vitae mauris est. Nunc finibus iaculis mauris. Proin congue lacus sit amet justo commodo, id interdum justo iaculis. Morbi imperdiet sit amet neque in tempus. Cras vel condimentum velit. Praesent fermentum, urna id hendrerit pharetra, felis nibh commodo neque, ultricies rutrum mi nunc accumsan orci. Duis dapibus augue sapien, ornare varius tortor eleifend vitae. Sed vel sapien augue. Aenean diam lectus, semper sit amet augue sed, sollicitudin lacinia diam. Vivamus convallis elit ac lectus rhoncus, maximus posuere eros rutrum. Vivamus pellentesque augue est, quis vehicula enim interdum at. In at tellus congue, molestie tortor ac, tempus sapien. Nam consectetur faucibus odio a dictum. </p>
+        </div> <!-- end policy wrapper -->
+    </section>
+    
+       <aside id="aside" class="shadow">
+
+         <!-- customer log-in -->
+        <div id="customer_login">       
+            <p id="login_title">Want to check your progress? Log in here:</p>
+            <form id="login">
+                <label for="aside_email">Email: </label>
+                <input type="email" name="email" id="aside_email"/>         
+                <label for="aside_password">Password: </label>
+                <input type="password" name="password" id="aside_password"/>                
+                <input id="login_submit" type="submit" name="login_submit" value="Log In" />            
+            </form>
+        </div>
+
+       <div id="newsletter"> 
+            <p id="signup_title">Sign up for our free monthly newsletter:</p>
+            <div id="message">
+                <div id="drawer">
+                <p id="message_1"></p>
+                <p id="message_2"></p>
+                </div>
+            </div>
+            <form id="sign_up" name="sign_up" >
+                <label for="aside_submit_name">Tell us your name:</label>
+                <input type="text" id="aside_submit_name" name="aside_submit_name"/> 
+                <label for="aside_submit_email">What is your email?:</label>
+                <input type="text" id="aside_submit_email" name="aside_submit_email"/> 
+                
+                <input id="news_submit" type="button" name="news_submit" value="Sign me up!" />     
+            </form>  
+        </div> <!-- end newsletter -->
+    </aside> 
+</div> <!-- end clear -->
+    
+   
+
+<!-- FOOTER -->
+<footer id="footer" class="shadow"></footer>
+
+
+</div> <!-- end container -->
+
+</body>
+</html>

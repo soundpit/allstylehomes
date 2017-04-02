@@ -1,0 +1,874 @@
+/*  
+    Em sizes:
+    .25em = 3px;
+    .5em = 6px;
+    .75em = 12px
+    1.0em = 16px;
+    1.25em = 20px;
+    1.5em = 24px;
+*/
+
+/* zero out everything and add box-sizing */
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:100%; 
+	line-height:1.5em;
+    position:relative;
+    background-color: #DFDFDF;
+}
+
+p {
+    font-size:.75em;
+}
+
+h1 {
+	font-size:1.5em;
+	font-weight:bold;
+	text-decoration:underline;
+	letter-spacing:-2px;
+	color:#b40c00;
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom:.75em;
+}
+
+h2 {
+	font-size:1.25em;
+	font-weight:bold;
+	color:#b40c00;
+    margin-top:.25em;
+    margin-bottom:.25em;
+}
+
+h3 {
+    font-size:1em;
+	font-weight:bold;
+	font-style:italic;
+	color:#e86600;
+    margin-top:.25em;
+    margin-bottom:.5em;
+    
+}
+
+a:link {
+    color:#b40c00;
+}
+
+a:active {
+    color:#e86600;
+}
+
+a:visited {
+    color:#e86600;
+}
+
+a:hover {
+    color:#b40c00;
+}
+
+
+/* UTILITY STYLES */
+.clear:before,
+.clear:after {
+  content:"";
+  display:table;
+}
+.clear:after {
+  clear:both;
+}
+.clear {
+  zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* THIS BOX SHADOW GIVES A SLIGHT MATERIAL DESIGN LOOK */
+.shadow {
+    background-color: #f6f6f6;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/*  end utility styles */
+
+/*  CONTAINER
+    add the the 2 widths and add 10px space
+    wraps the whole site */
+
+#container {
+   
+    width: 800px;
+    margin:0 auto;
+    margin-top:10px;
+}
+
+/* HEADER AREA */
+
+#logo {
+    height:140px;
+    width: 390px;
+    display:block;
+    margin:0 auto;
+ }
+
+#left_header {
+    width:395px;
+    height:140px;
+    float:left;
+    overflow: hidden;
+    background:#ffffff; /* make sure its the right color */
+}
+
+
+
+/* RIGHT HEADER STYLE */
+
+#right_header {
+    width:395px;
+    height:140px;
+    float:right;
+    text-align: center;
+    padding-top:.5em;
+    line-height: 1.5em;
+}
+
+#right_header i {
+    font-size: 1.3em;
+    padding-top:3px;
+    padding-bottom:5px;
+}
+
+/* end header */
+
+/* ASIDE BAR */
+
+#login_title,
+#signup_title{
+   text-transform: uppercase; 
+   line-height:1em;   
+}
+
+#customer_login {
+    
+     margin:10px;
+    max-width:300px;
+    border-bottom:1px solid #b40c00;
+    padding-bottom:1em;
+}
+
+#newsletter {
+    margin:10px;
+    max-width:300px;
+}
+
+#login_submit,
+#news_submit {
+    background: #e86600;
+    color:black;
+    width:auto;
+    margin-top:.5em;
+    padding-left:.5em;
+    padding-right:.5em;
+    border:none;
+}
+
+/* end aside */
+
+/* NAVBAR */
+
+
+
+/*  min height is 30, but will expand when
+    the browser is viewed on a mobile device */
+nav {
+    margin-top:10px;
+    margin-bottom:10px;
+    min-height:30px;
+    height:auto;
+    text-align: center; 
+ }
+
+#main_nav {
+    list-style-type: none;
+    text-align: center;
+    display:inline-block;
+ }
+
+/* turn the li into inline blocks so they flow on the same line */
+#main_nav li {
+    display:inline-block;
+    margin-left:-5px; 
+    margin-bottom:2px;
+    height:28px;
+ }
+
+#main_nav li:first-child {
+    margin-left:0;
+}
+
+#main_nav a {
+    text-decoration: none;
+    display:block;
+    color:black;
+    padding-left:10px;
+    padding-right:10px; 
+    font-size:12px;
+    background:#f6f6f6;
+    line-height: 28px; 
+}
+
+#main_nav a:hover {
+	border-bottom:2px solid #b40c00;
+}
+a:active,
+.active {
+    border-bottom: 2px solid #e86600;   
+}
+
+/* end nav-bar */
+
+
+/*  MAIN CONTENT */
+
+#main { 
+    width:600px;
+    min-height:400px;
+    float:left;
+}
+
+#aside { 
+    width:190px;
+    min-height:400px;
+    float:right;
+    overflow:hidden;
+    padding-bottom:.5em;
+}
+
+/* aside forms */
+
+#message {
+   position:relative;
+    display:none;
+    width:90%;
+    margin:0 auto;
+    height:auto;
+    border-radius: 5px;
+   border:2px solid #ccc;
+    margin-top:1em;
+    font-size:.75em;
+    overflow:hidden;
+}
+
+#drawer {
+ 
+    padding-left:1em;
+ 
+}
+/* end main */
+
+/*  FOOTER */
+
+#footer {
+    height:30px;
+    text-align: center;
+    margin-bottom:10px;
+    margin-top:10px; 
+}
+
+#footer p {
+    line-height: 30px;
+    font-size: 10px;
+    font-family: tahoma, geneva, sans-serif;
+}
+
+#footer a:active {
+    color:#b40c00;
+}
+
+#footer a:visited {
+    color: #e86600;
+}
+
+#footer a:link {
+    color:#000;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color:#b40c00;
+    text-decoration: underline;
+}
+
+/* end footer */
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:850px) {
+    
+    body {
+        background:none;
+    }
+    
+    #container {
+        width:100%;
+    }
+    
+    header {
+        width:100%;  
+    }
+    
+    #left_header {
+        width:100%;
+       }
+    
+    #left_header img {
+        width:90%;
+       max-width:350px;
+    }
+	   
+    #right_header {  
+      display:none;
+    }
+    
+    #main {
+        width:100%;
+     }
+    
+    #aside {
+        margin-top:10px;
+        width:100%;     
+    }
+    
+    .image_map_page {
+        display:none;
+    }
+    
+    .design_house img {
+        display:block;
+        margin:0 auto;
+        float:none;
+    }
+    
+    #about_image {
+      display:none;
+    }
+    
+    #about_content {
+        width:100%;
+    }
+    
+   
+}
+
+/* end media queries */
+
+
+/* HOME PAGE STYLES */
+
+#main_video {
+    margin:10px;
+}
+
+#video {
+    width:auto;
+    height:300px;
+    max-height: 300px;
+    background-color:#666;
+    margin-top:1em;
+}
+
+#main_play_icon {
+   
+    display:block;
+    font-size: 80px;
+    color:white;
+    text-align: center;
+    width:100%;
+    padding-top:110px;
+  
+    
+ }
+
+
+/* end home page */
+
+/* ABOUT US */
+
+.about_wrapper {
+    margin:10px;
+}
+
+#about_image {
+  
+    float:right;
+    margin:5px 0 5px .75em;
+    width:150px;
+    height:250px;
+    font-size:.6em;
+    line-height: 1.3em;
+    font-style:italic;
+    
+}
+
+#about_image img {
+    width:150px;
+    height:150px;
+}
+
+#about_image figcaption {
+    padding:.75em;
+}
+
+
+
+
+
+/* end about us page */
+
+ 
+ /* DESIGNS PAGE */
+
+
+/*  image map */
+
+.image_map_page {
+    margin:10px;
+    margin-bottom:1em;
+}
+
+.image_map_page img {
+
+    display:block;
+	width:100%;
+	height:auto;
+	margin-top:.75em;
+}
+
+.image_map {
+	position:relative;
+}
+.image_map ul {
+	margin:0px;
+	padding:0px;
+	list-style:none;	
+}
+
+.image_map a {
+    font-size:.75em;
+    line-height: 1.3em;
+	text-decoration:none;
+	position:absolute;
+	display:block;
+	/*
+	background-image: url(images/transparent.gif);
+	*/
+	text-indent:-900em;
+	height:20px;
+	width:20px;
+	border-radius:50%;
+	background:white;
+	border:2px solid black;
+}
+
+/* what happens when they are all hovered over */
+.image_map a:hover {
+	text-indent:0;
+	background-color:#e86600;
+    color:black;
+	border:2px solid black;
+	border-radius:3px;
+	height:auto;
+	width:150px;
+	padding:10px 10px 10px 25px;
+	z-index:50;	
+}
+
+/* now for each separate image */
+.image_map .products a {
+	top:180px;
+	left:140px;
+}
+
+.image_map .fixtures a {
+	top:250px;
+	left:210px;
+}
+
+.image_map .landscaping a {
+	top:340px;
+	left:60px;
+}
+
+.image_map .fireplace a {
+	top:70px;
+	left:520px;
+}
+
+.image_map .water a {
+	top:200px;
+	left:380px;
+}
+
+/*  end image map */
+
+/* designs */
+
+#design_page {
+    margin:2em 10px 10px 10px;
+}
+
+/* house design icons */
+i {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:.75em;
+}
+ 
+.designs_img {
+    width:200px;
+    height:200px;
+    float:left;
+    margin-right:10px;
+}
+
+.design_house {
+    
+   padding:20px 10px 20px 0px;
+    line-height: 1.5em;
+    border-bottom:1px solid grey;
+}
+
+.design_house:last-child{
+    border-bottom:none;
+}
+
+.design_house img:hover {
+    cursor:pointer;
+    z-index:20;
+}
+
+.design_house h4 {
+    margin-bottom:5px;
+}
+
+.design_house p {
+    margin-top: 5px; 
+}
+
+/* click stuff */
+
+.spy {
+    display:none;
+    position:absolute;
+    font-size:3em;
+    line-height:200px;
+    width:200px;
+    color:#222;
+    text-align: center;
+    
+}
+
+.design_house img:hover.spy {
+    display:inline;
+}
+
+/* end design page */
+
+/* PROCESS PAGE */
+
+
+#process_wrapper {
+	max-width:580px;
+    width:95%;
+    margin:10px 10px 10px 10px;
+}
+
+#process_wrapper ul {
+    margin:0px;
+    padding:0px;
+    list-style: none;
+    height: 300px;
+    overflow: hidden;
+    border:2px solid black;
+    position:relative;
+}
+
+
+#process_wrapper ul .slider {
+    position:absolute;
+   padding:20px;
+   display:none;
+    height:300px;;
+    top:0;
+    left:0;
+    background:#f6f6f6;
+ 
+   
+}
+
+#button-prev {
+ 
+    position:absolute;
+    display:block;
+    cursor:pointer;
+   padding:.25em;
+    z-index: 50;
+    
+    /*  left-bottom-positioning */
+    left: 0;
+    margin-left: 0px;
+    right: auto;
+    margin-right: auto;
+   
+    top: auto;
+    margin-top: auto;
+    bottom: 0;
+    margin-bottom: 0px;
+     
+}
+
+#button-next {
+    
+    position:absolute;
+    display:block;
+    cursor:pointer;
+    padding:.25em;
+    z-index: 50;
+    
+    /*  right-bottom-positioning */
+     left: auto;
+    margin-left: auto;
+    right: 0;
+    margin-right:0;
+
+    top: auto;
+    margin-top: auto;
+    bottom: 0;
+    margin-bottom:0;
+}
+
+
+/*  end process page */
+
+/* FAQS PAGE */
+
+.faqs_wrapper {
+    width:95%;
+    max-width:580px;
+    margin:10px; 
+}
+
+.faqs_wrapper h1 {
+    text-align: center;
+    margin-top:30px;
+    margin-bottom:40px;  
+}
+
+
+
+/* accordian styles */
+#faq_list {
+    list-style: none;
+}
+
+
+
+
+#faq_list .question {
+    background:#eee;
+    min-height:3em;
+    height:auto;
+    border-bottom:2px #ddd solid;
+    cursor:pointer;
+    position:relative;
+}
+
+#faq_list .question h3  {
+    padding-top:.75em;
+    padding-left:.75em;
+ }
+
+
+
+#faq_list .answer {
+  
+    overflow:hidden;
+    position:relative;
+   height:0px;
+    
+}
+
+#faq_list .answer p {
+   
+   
+    margin:1em 1em 1em 2em;
+    border-left:3px solid #e86600;
+    padding-left:1em;
+    
+}
+
+/*  end faqs */
+
+/* TESTIMONIALS */
+
+.testimonials_wrapper {
+    margin:10px;
+    
+}
+
+.testimonials_wrapper h1 {
+    margin-top:30px;
+    text-align: center;
+    margin-bottom:30px;
+}
+
+.quote {
+    margin-top:5px;
+    margin-bottom:20px;
+    text-indent: 10px;
+    margin-left:20px;
+}
+
+/*  end testimonials */
+
+/*  CONTACT PAGE */
+
+#contact_head,
+#contact_phone,
+#map
+{
+	margin:.5em .5em 1em .5em;
+}
+
+
+
+/* the google maps embed */
+iframe {
+width:100%;
+margin-top:.5em;
+}
+
+#contact_form {
+	width:50%;
+	margin: 1em 0 .5em 1em;
+}
+  
+label {
+    font-size: .625em;      
+}
+
+input {
+    margin-top:.25em;
+    margin-bottom:.25em;
+    width:100%;	
+    border:1px solid #aaa;
+    padding:.5em;
+}
+
+textarea {
+    margin-top:.25em;
+    margin-bottom:.25em;
+    resize: none;
+    width:100%;
+    height:150px;
+    border:1px solid #ccc;
+    padding:.5em;
+    font-family: verdana;
+}
+
+#submit_button,
+#reset{
+    width:auto;
+    padding:.25em;
+    margin-top:.25em;
+    display:inline-block;
+}
+  
+/*  end contacts page */
+
+/* Privacy Policy */
+
+#privacy_wrapper {
+    margin:10px;
+}
+
+#privacy_wrapper p {
+    text-indent: .5em;
+}
+
+/* image box stuff */
+
+/*  this is the box that will be a full-screen background 
+    it will be assigned via script
+*/
+
+
+#design_lightbox {
+    
+    display:none;
+    position:absolute;
+    width:100%;
+    height:101%;
+    background:black;
+    z-index:100;
+    top:-10px;
+    left:0;
+    background-color:rgba(100,100,100,0.8);
+}
+
+#image_box {
+
+    position:fixed;   
+    left: 0;
+    margin-left: auto;
+    right: 0;
+    margin-right: auto;
+    margin-top: 20px;
+    width:100%;
+    max-width: 800px;
+    z-index:200;
+ }
+
+#image_box i {
+    background:red;
+    color:black;
+    position:absolute;
+    top:18px;
+    right:16px;
+    width:16px;
+    height:16px;
+    text-align: center;
+    line-height:16px;
+    border-radius:4px;
+ 
+}
+
+#image_box i:hover {
+    cursor:pointer;
+}
+
+
+
+#image_box img {
+ 
+    width:100%;
+    max-width:800px;
+    border:10px solid white;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
